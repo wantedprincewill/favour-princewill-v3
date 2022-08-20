@@ -26,6 +26,15 @@
     bottom: 0%;
   }
 }
+@media only screen and (min-height: 800px) and (max-height: 1300px) {
+  .hero-section .hero-wrapper {
+    width: 80%;
+  }
+  .hero-section .hero-wrapper .hero-image {
+    top: 25%;
+    bottom: unset;
+  }
+}
 .about-section {
   height: -webkit-fit-content;
   height: -moz-fit-content;
