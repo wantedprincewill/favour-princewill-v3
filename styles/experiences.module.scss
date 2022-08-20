@@ -1,0 +1,39 @@
+.experiences-section {
+  .experiences-wrapper {
+    width: 70vw;
+    margin: 30vh auto;
+
+    h1 {
+      font-size: clamp(3em, 8vw, 200px);
+      font-weight: normal;
+      z-index: 2;
+    }
+
+    .experience {
+      display: flex;
+      // background-color: red;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      padding: 2em 0;
+      border-top: 1px solid black;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .experiences-section {
+    .experiences-wrapper {
+      width: 80vw;
+      .experience {
+        padding: 1rem 0;
+        p {
+          &:last-of-type {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

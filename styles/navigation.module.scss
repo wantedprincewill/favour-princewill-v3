@@ -1,0 +1,101 @@
+nav {
+  //   background-color: red;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  max-width: 90vw;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  .menu-open {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  .navigation-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100%);
+    background-color: #de5e40;
+    transition: all 0.3s cubic-bezier(0.89, 0, 0.565, 0.99);
+
+    .menu-close {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      cursor: pointer;
+      padding: 10px 20px;
+      border: 1px solid black;
+      border-radius: 50px;
+    }
+
+    .navigation-links {
+      padding-left: 0;
+      list-style: none;
+      margin-left: 3em;
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: clamp(2em, 3em, 8em);
+          color: rgba($color: #000000, $alpha: 1);
+          line-height: 2em;
+          font-family: "NewYork";
+          position: relative;
+
+          &::before {
+            display: block;
+            content: attr(data-text);
+            position: absolute;
+            width: 0;
+            transition: all 0.3s cubic-bezier(0.455, 0, 0.515, 0.955);
+            overflow: hidden;
+          }
+
+          // &:hover {
+          //   &::before {
+          //     width: 100%;
+          //     color: #464138;
+          //   }
+          // }
+        }
+      }
+    }
+
+    .social-links {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      gap: 2em;
+      margin-left: 3em;
+
+      a{
+        text-decoration: none;
+        color: black;
+        // text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  nav {
+    .navigation-wrapper {
+      // background-color: red;
+
+      .social-links {
+        gap: 1.3em;
+      }
+    }
+  }
+}
