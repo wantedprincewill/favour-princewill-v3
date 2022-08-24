@@ -110,12 +110,17 @@
   margin: 5vh 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  cursor: pointer;
+}
+.projects-section .projects-wrapper .project:hover .project-preview {
+  transform: scale(1.1);
 }
 .projects-section .projects-wrapper .project .project-preview {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.3s;
   filter: brightness(90%) contrast(50%);
 }
 .projects-section .projects-wrapper .project:nth-of-type(odd) .project-info {

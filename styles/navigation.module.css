@@ -25,7 +25,7 @@ nav .navigation-wrapper {
   height: 100vh;
   transform: translateX(-100%);
   background-color: #de5e40;
-  transition: all 0.3s cubic-bezier(0.89, 0, 0.565, 0.99);
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 nav .navigation-wrapper .menu-close {
   position: absolute;
