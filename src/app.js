@@ -1,3 +1,28 @@
+import "./styles/loader.scss";
+import "./styles/styles.css";
+import "./styles/experiences.scss";
+import "./styles/footer.scss";
+import "./styles/navigation.scss";
+import "./styles/index.scss";
+
+// assets
+import A3Studio from "./assets/images/A3-studio.jpg";
+import ceiltoVino from "./assets/images/ceilto-vino.png";
+import elpha from "./assets/images/elpha.jpeg";
+import favour from "./assets/images/favour.jpg";
+import upArrow from "./assets/images/up-arrow.png";
+import leges from "./assets/images/leges.png";
+import portfolio from "./assets/images/portfolio-v2.png";
+import poshSuites from "./assets/images/posh-suites.png";
+
+
+
+// locomotive scroll
+import LocomotiveScroll from "./lib/locomotive-scroll.min.js";
+import "./lib/locomotive-scroll.css";
+
+console.log(gsap);
+
 gsap.registerPlugin(ScrollTrigger);
 
 var locoScroll = new LocomotiveScroll({
