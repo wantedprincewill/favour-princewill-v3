@@ -21,7 +21,6 @@ import poshSuites from "./assets/images/posh-suites.png";
 import LocomotiveScroll from "./lib/locomotive-scroll.min.js";
 import "./lib/locomotive-scroll.css";
 
-console.log(gsap);
 
 gsap.registerPlugin(ScrollTrigger);
 

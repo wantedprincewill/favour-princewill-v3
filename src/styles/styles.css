@@ -9,11 +9,13 @@ body {
 @font-face {
   font-family: "Manrope";
   src: url("../assets/fonts/ManropeGX.ttf");
+  font-display: swap 
 }
 
 @font-face {
   font-family: "NewYork";
   src: url("../assets/fonts/NewYork\ PERSONAL\ USE.otf");
+  font-display: swap 
 }
 
 

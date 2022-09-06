@@ -12,12 +12,15 @@ const newPagesConfig = pageNames.map((page) => {
 
 module.exports = {
   mode: "production",
-  entry: "./src/app.js",
+  entry: {
+    index: "./src/app.js",
+    locomotive_scroll_min : './src/lib/locomotive-scroll.min.js'
+  },
 
   output: {
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    filename: "app.bundle.js",
+    filename: "[name].bundle.js",
     assetModuleFilename: "[name][ext]",
   },
 
